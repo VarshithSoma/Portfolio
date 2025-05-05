@@ -573,3 +573,7 @@ body {
   font-weight: 500;
   display: inline-block;
 }
+div a {
+  text-decoration: underline;
+  margin-right: 10px;
+}
