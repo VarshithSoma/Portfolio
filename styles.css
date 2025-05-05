@@ -251,3 +251,325 @@ section {
   text-decoration: underline;
   margin-right: 10px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-title {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav a {
+  color: #4a5568;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #2b6cb0;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* About Section */
+.my-github {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.my-github img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2d3748;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.imgs {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.imgs a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #2b6cb0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.imgs a:hover {
+  background-color: #2c5282;
+}
+
+/* Timeline Styles */
+.timeline {
+  list-style: none;
+}
+
+.timeline > li {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline > li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2b6cb0;
+}
+
+.my-intern {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.my-intern h4 {
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.my-intern p {
+  color: #718096;
+  margin: 0;
+}
+
+.my-intern span {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.my-intern a {
+  color: #2b6cb0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.my-intern a:hover {
+  color: #2c5282;
+  text-decoration: underline;
+}
+
+.timeline li ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.timeline li ul li {
+  margin-bottom: 5px;
+}
+
+.margin-b-req {
+  margin-bottom: 40px;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .my-github img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .branding {
+    justify-content: center;
+  }
+
+  .my-intern {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .my-intern span {
+    margin-top: 5px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline > li {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+.education-card {
+  background-color: #f8fafc;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.education-card h4 {
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.education-program {
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.education-period,
+.education-grade {
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.education-grade {
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+/* Skills Styles */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: #ebf4ff;
+  color: #3182ce;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+}
