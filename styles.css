@@ -242,3 +242,12 @@ h4 a {
   padding: 1em;
   text-decoration: underline;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.imgs a {
+  text-decoration: underline;
+  margin-right: 10px;
+}
